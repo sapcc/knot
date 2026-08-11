@@ -28,6 +28,7 @@ static const uint16_t dnssec_diff_types[] = {
 	KNOT_RRTYPE_NSEC3PARAM,
 	KNOT_RRTYPE_CDNSKEY,
 	KNOT_RRTYPE_CDS,
+	KNOT_RRTYPE_DS,
 	0
 };
 
