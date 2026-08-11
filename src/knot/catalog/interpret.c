@@ -45,7 +45,8 @@ static bool check_zone_version(const zone_contents_t *zone)
 
 	knot_rdata_t *rdata = ver_rr->rdata;
 	for (int i = 0; i < ver_rr->count; i++) {
-		if (rdata->len == 2 && rdata->data[1] == CATALOG_ZONE_VERSION[0]) {
+		if (rdata->len == 2 && (rdata->data[1] == CATALOG_ZONE_VERSION[0] ||
+		                        rdata->data[1] == CATALOG_ZONE_VERSION_1[0])) {
 			return true;
 		}
 		rdata = knot_rdataset_next(rdata);

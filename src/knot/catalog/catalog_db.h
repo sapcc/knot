@@ -10,6 +10,7 @@
 
 #define CATALOG_VERSION		"1.0"
 #define CATALOG_ZONE_VERSION	"2" // must be just one char long
+#define CATALOG_ZONE_VERSION_1	"1" // legacy v1 (draft-muks) compat
 #define CATALOG_ZONES_LABEL	"\x05""zones"
 #define CATALOG_GROUP_LABEL	"\x05""group"
 #define CATALOG_GROUP_MAXLEN	255

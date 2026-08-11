@@ -21,10 +21,14 @@ static const uint16_t dnssec_types[] = {
 };
 
 static const uint16_t dnssec_diff_types[] = {
+	KNOT_RRTYPE_DNSKEY,
 	KNOT_RRTYPE_RRSIG,
 	KNOT_RRTYPE_NSEC,
 	KNOT_RRTYPE_NSEC3,
 	KNOT_RRTYPE_NSEC3PARAM,
+	KNOT_RRTYPE_CDNSKEY,
+	KNOT_RRTYPE_CDS,
+	KNOT_RRTYPE_DS,
 	0
 };
 
